@@ -1,0 +1,79 @@
+Útskýrðu	stuttlega	eftirfarandi	hugtök	og	hvað	þau	gera:
+1. WebGL
+	WebGL er vefur staðall til að sýna 3D grafík á hvaða platfrom sem styður OpenGL
+		
+2. GPU
+	graphics processing unit (GPU) er sérhæft rafeindabúnaður sem hannaður er til að hratt vinna úr og breyta minni til að flýta fyrir myndun mynda í ramma biðminni sem ætlað er til framleiðsla á skjátæki.
+	Gpu er hannað sérstaklega til að sinna flóknum stærðfræðilegum og rúmfræðilegum útreikningum sem eru nauðsynlegar fyrir grafík flutningur.
+
+3. rasterizing
+	Gera mynd í raster mynd, einnig þekkt sem pixla mynd eða punktamynd. Rasterization er venjulega gert til vektor grafík eða myndir sem hafa vektor hluti.
+
+4. GLSL	
+	GLSL (sem stendur fyrir GL shading language) er tungumál sem gefur forriturum möguleika á að breyta leiðsluskammum
+
+5. Vertex
+	Vertex eða hornapunktur er horn á þríhyrningi
+
+6. Primative	
+	Primitive er grunnviðmót eða hluti af kóða sem hægt er að nota til að byggja upp flóknara þætti eða tengi.
+
+7. Fragment
+	fragment shader finnur út hvaða lit á að vera á hverjum pixel á að vera.
+8. Pixel
+	er einn punktur á skjá sem getur geymt einhvern lit, margir pixlar geta myndað mynd úr þeim.
+
+9. Clip	space
+	Allt fyrir utan view frustumið. Ekkert í clip spaceinu er renderað vegna þess að það er ekki þörf fyrir það þar sem það sést
+  ekki.
+
+10. View	frustum
+	allt sem þú sérð er inn í view frustum / field of view
+
+11. Z-buffering
+	áhveður hvaða object til að byrtja á skjánum t.d. A og B ef A er fyrir framan B þá sérðu ekki mikið af B en munt sjá allan A stafinn.
+
+12. Right-hand	coordinate	system	(RHS)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Afhverju eru 3D	objectar búnir til útfrá samsettum þríhyrningum	í 3D grafík?
+	Það er léttara að raða þeim saman í hvaða form sem er því að þríhyrningur er mjög basic form. það er ekki eins mikil vinna að móta þeim saman í það sme þér langar að gera heldur en með rétthyrning sem þú myndir þurfa gera margar aðferðir til að geta mótað það saman í réttu forminn.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+1.5%	 Útskýrðu	ítarlega og	tæknilega	(en	án	kóða) með	eigin	orðum ásmt	skýringamyndum	hvernig	rendering	pipeline	virkar	í	WebGL .
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+1.5% Transform	(translation, rotation	og	scale).	Komdu með sýnidæmi með vector/vigri) í cartesian hnitakerfi	(x,y,z)	fyrir:
+a)	translation	
+
+	þú ert með þríhyrning
+	þríhyringurinn er
+	A(-3, 4), B(0, 1), C(-3, 0)
+	síðan ætla ég að færa hann um í vigranum
+	ég ætla að færa hann (x, y) ---> (x + 4, y - 2)
+	Þá verður þýrhirningurinn í vigranum
+	A(1, 2), B(4, -1), C(1, -2)
+
+	þá ertu bujinn að færa þríhyrninginn. 
+
+b)	rotation	
+	
+	Þríhyringur sem er á vigranum
+	A(-4, 3), B(-1, 3), C(-1, 1)
+	munum snúa þríhyrninginn á (0, 0)
+	munum súna þríhyrinn annað hvort rangsælis eða réttsælis
+	Rangsælis í 90°, 180° eða 270°. réttsælis í 90°, 180° eða 270°
+	þríhyrningurinn verður alltaf jafn stór hvert sinn sem þú munt hreyfa hann
+	t.d. ef ég myndi hreyfa hann um rangsælis í 90° þá mun þríhyrningurinn vera á vigranum
+	F = A, D = B og E = C.
+	F(-3, -4), D(-3, -1), E(-1, -1)
+
+
+c)	scale	
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.5% Fylki	(e.	matrix).	Sýndu	með sýnidæmi	hvernig	4x4	fylki	vigri/vector	er reiknaður	með:
+a)	translation	matrix
+b)	rotation	 matrix
+c)	scale	matrix
