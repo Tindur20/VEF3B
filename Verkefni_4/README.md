@@ -6,7 +6,6 @@
 
 hér eru linkar á tutorial sem ég notaði
 [github d3](https://github.com/d3/d3/blob/master/API.md#geographies-d3-geo) notaði þetta þegar ég var að gera mapið
----------------------------------------------------------------------------------------------------
 [video 1](https://www.youtube.com/watch?v=aNbgrqRuoiE) notaði þetta mest
 [video 2](https://www.youtube.com/watch?v=G-VggTK-Wlg) notaði þetta lika en þetta er basically það sama og video 1
 [video 3](https://www.youtube.com/watch?v=lJgEx_yb4u0) Notaði þetta eitthvað í byrjun
