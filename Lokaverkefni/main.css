@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+svg {
+	background: #2fb1ff;
+}
+
+.subunit {
+  stroke-dasharray: 1390.4158935546875;
+  stroke-dashoffset: 1390.4158935546875;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
