@@ -1,7 +1,10 @@
 # Verkefni 4
-[Línkur á síðuna](http://tsuts.tskoli.is/2t/2811992349/onn_5/Verkefni_4/index.html)
-Í þessu verkenfi er ég að nota d3.js til að gera map frá json skrá
-
+[Línkur á síðuna](http://tsuts.tskoli.is/2t/2811992349/onn_5/Verkefni_4/index.html)                                                       
+Í þessu verkenfi er ég að nota d3.js til að gera map af Íslandi frá json skrá.
+Þetta verkefni er gert með d3js og ég gerði map af Íslandi ég ætlaði að gera map yfir allum 
+heiminum en fan ekkert gott json skrá sem ég skildi.
+Það er ekki mikið hægt að gera í þessu verkefni útaf ég eyddi mestum tímanum að læra að nota d3js framework-ið.
+Eina notkunnin er að þú getur hoverað yfir hluti á landinu og þeir breytast um lit.
 
 
 hér eru linkar á tutorial sem ég notaði                                                                                                   
